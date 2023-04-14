@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.yemreak.converter</string>
+	<key>connections</key>
+	<dict>
+		<key>3EE07416-B4F5-49F1-81F6-C6EC27AB57F9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DB8C1703-EA2E-41AE-BBD7-D1DA958BAB72</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Yunus Emre Ak</string>
+	<key>description</key>
+	<string>All fiat currency and crypto converter</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>yConverter</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Prices fetching...</string>
+				<key>script</key>
+				<string>python3 src/main.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>All fiat currency and crypto converter</string>
+				<key>title</key>
+				<string>yConverter</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3EE07416-B4F5-49F1-81F6-C6EC27AB57F9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>DB8C1703-EA2E-41AE-BBD7-D1DA958BAB72</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># 💱 yConverter Alfred Workflow
+
+- 💚 `cc 2 usdt try` to convert `2 USDT` to `TRY` value
+- 🎉 Complex queries like `2 TRY PHP` is working now!
+- 🔐 To use this workflow you need to check out "Get Your Free Api Key for FIAT" section
+- ↩️ Press enter (⌅) to paste result
+
+&gt; For more detail check out: https://github.com/yedhrab/YConverter
+
+## 🔑 Get Your Free Api Key for FIAT
+
+- Click the link: https://openexchangerates.org/signup/free
+- Sign up
+- Verify your email and use the key that send to your e-mail
+
+## 👮‍♂️ Free Forex API Rate Limits
+
+- Currency Pairs per Request: 2
+- Number of Requests per Hour: 100
+- Date Range in History: 8 Days
+- Allowed Back in History: 1 Year(s)
+
+## Crypto Convertion
+
+- Crypto convertion uses **Binance** tickers
+- There is no limit
+
+## 🗄 Cache System
+
+- All data is stored in `$HOME/yconverter.yml`
+- All cached pair value are refreshed every **10 mins** for fiat, **1 min** for crypto
+
+## 🪪  License
+
+```
+Copyright 2022 Yunus Emre Ak ~ YEmreAk.com
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```</string>
+	<key>uidata</key>
+	<dict>
+		<key>3EE07416-B4F5-49F1-81F6-C6EC27AB57F9</key>
+		<dict>
+			<key>xpos</key>
+			<real>140</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+		<key>DB8C1703-EA2E-41AE-BBD7-D1DA958BAB72</key>
+		<dict>
+			<key>xpos</key>
+			<real>300</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variables</key>
+	<dict>
+		<key>OPEN_EXCHANGE_RATES_API_KEY</key>
+		<string>d8d2326d3bff4f03a36d5b2ecfc72522</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>OPEN_EXCHANGE_RATES_API_KEY</string>
+	</array>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>yemreak.com</string>
+</dict>
+</plist>

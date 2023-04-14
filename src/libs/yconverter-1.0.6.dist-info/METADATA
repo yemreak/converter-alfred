@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: yconverter
+Version: 1.0.6
+Summary: All fiat currency and crypto converter
+Home-page: https://github.com/yedhrab/yConverter
+Author: Yunus Emre Ak
+Author-email: yemreak.com@gmail.com
+License: Apache Software License 2.0
+Project-URL: Changelog, https://github.com/yedhrab/YConverter/blob/main/CHANGELOG.md
+Project-URL: Issue Tracker, https://github.com/yedhrab/YConverter/issues
+Keywords: cryptocurrencyconverter,currencyconverter,converter,currecies,crpytocurrencies,cryptoconverter
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ruamel.yaml (==0.17.21)
+Requires-Dist: requests (==2.28.2)
+
+# 💱 YConverter - Beta
+
+All fiat currency and crypto converter
+
+- 💚 Type terminal: `convert 1 usd try` to test it
+- 🎓 For Alfred 4 ➡️ [YConverterAlfred](https://github.com/yedhrab/YConverterAlfred)
+- 🎉 Complex queries like `2 TRY PHP` is working now!
+
+## ⬇️  Installation
+
+- Recommended installation is `pip` install
+
+```
+pip install yconverter
+```
+
+## 🔑 Get Your Free Api Key for FIAT
+
+- Click the link: https://openexchangerates.org/signup/free
+- Sign up
+- Verify your email and use the key that send to your e-mail
+
+## 👮‍♂️ Free Forex API Rate Limits
+
+- Currency Pairs per Request: 2
+- Number of Requests per Hour: 100
+- Date Range in History: 8 Days
+- Allowed Back in History: 1 Year(s)
+
+## Crypto Convertion
+
+- Crypto convertion uses **Binance** tickers
+- There is no limit
+
+## 🗄 Cache System
+
+- All data is stored in `$HOME/yconverter.yml`
+- All cached pair value are refreshed every **10 mins** for fiat, **10 sec** for crypto
+
+## 🪪  License
+
+```
+Copyright 2022 Yunus Emre Ak ~ YEmreAk.com
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
