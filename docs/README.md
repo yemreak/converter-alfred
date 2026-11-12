@@ -1,5 +1,7 @@
 # 💱 yConverter Alfred Workflow
 
+> **[optionOS](https://optionos.app/)** — Show AI what you mean. Stay in your flow. <!-- optionos -->
+
 - 💚 `cc 2 usdt try` to convert `2 USDT` to `TRY` value
 - 🎉 Complex queries like `2 TRY PHP` is working now!
 - 🔐 To use this workflow you need to check out "Get Your Free Api Key for FIAT" section
